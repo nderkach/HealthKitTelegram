@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7C5846B3375D061ECE5593 /* Pods_HealthKitTelegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2875AB24151725CCF1D0496B /* Pods_HealthKitTelegramTests.framework */; };
+		4ACCCD9EDF013380DB01A116 /* Pods_HealthKitTelegramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD40BAEE945094CBBE501402 /* Pods_HealthKitTelegramUITests.framework */; };
+		E4C37B9954B8118067D203C9 /* Pods_HealthKitTelegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8507D679EC28C0583E71B7E /* Pods_HealthKitTelegram.framework */; };
+		ED4C27A420D2D77300A0FF40 /* HealthKitManager+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C27A320D2D77300A0FF40 /* HealthKitManager+Background.swift */; };
+		EDF9B11620D2A4FE00BA1B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B11520D2A4FE00BA1B56 /* AppDelegate.swift */; };
+		EDF9B11820D2A4FE00BA1B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B11720D2A4FE00BA1B56 /* ViewController.swift */; };
+		EDF9B11B20D2A4FE00BA1B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF9B11920D2A4FE00BA1B56 /* Main.storyboard */; };
+		EDF9B11D20D2A50000BA1B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF9B11C20D2A50000BA1B56 /* Assets.xcassets */; };
+		EDF9B12020D2A50000BA1B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF9B11E20D2A50000BA1B56 /* LaunchScreen.storyboard */; };
+		EDF9B12B20D2A50100BA1B56 /* HealthKitTelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B12A20D2A50100BA1B56 /* HealthKitTelegramTests.swift */; };
+		EDF9B13620D2A50100BA1B56 /* HealthKitTelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF9B13520D2A50100BA1B56 /* HealthKitTelegramUITests.swift */; };
+		EDF9B14620D2A52C00BA1B56 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF9B14520D2A52C00BA1B56 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF9B12720D2A50100BA1B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF9B10A20D2A4FE00BA1B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF9B11120D2A4FE00BA1B56;
+			remoteInfo = HealthKitTelegram;
+		};
+		EDF9B13220D2A50100BA1B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF9B10A20D2A4FE00BA1B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF9B11120D2A4FE00BA1B56;
+			remoteInfo = HealthKitTelegram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		225C3EC83D366C15CC306A71 /* Pods-HealthKitTelegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitTelegramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthKitTelegramUITests/Pods-HealthKitTelegramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2875AB24151725CCF1D0496B /* Pods_HealthKitTelegramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthKitTelegramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B92824545450FF6D47C09A /* Pods-HealthKitTelegram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitTelegram.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthKitTelegram/Pods-HealthKitTelegram.release.xcconfig"; sourceTree = "<group>"; };
+		78688F7E3C235DD45AF6D3A0 /* Pods-HealthKitTelegramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitTelegramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthKitTelegramTests/Pods-HealthKitTelegramTests.release.xcconfig"; sourceTree = "<group>"; };
+		A416F24C823039D8D9BC1DB3 /* Pods-HealthKitTelegram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitTelegram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthKitTelegram/Pods-HealthKitTelegram.debug.xcconfig"; sourceTree = "<group>"; };
+		B8507D679EC28C0583E71B7E /* Pods_HealthKitTelegram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthKitTelegram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2251F2971E2994EB2E1B322 /* Pods-HealthKitTelegramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitTelegramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthKitTelegramTests/Pods-HealthKitTelegramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED4C27A320D2D77300A0FF40 /* HealthKitManager+Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthKitManager+Background.swift"; sourceTree = "<group>"; };
+		EDF9B11220D2A4FE00BA1B56 /* HealthKitTelegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitTelegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9B11520D2A4FE00BA1B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF9B11720D2A4FE00BA1B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDF9B11A20D2A4FE00BA1B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF9B11C20D2A50000BA1B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF9B11F20D2A50000BA1B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDF9B12120D2A50000BA1B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF9B12620D2A50100BA1B56 /* HealthKitTelegramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitTelegramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9B12A20D2A50100BA1B56 /* HealthKitTelegramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTelegramTests.swift; sourceTree = "<group>"; };
+		EDF9B12C20D2A50100BA1B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF9B13120D2A50100BA1B56 /* HealthKitTelegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitTelegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF9B13520D2A50100BA1B56 /* HealthKitTelegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitTelegramUITests.swift; sourceTree = "<group>"; };
+		EDF9B13720D2A50100BA1B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF9B14320D2A52C00BA1B56 /* HealthKitTelegram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitTelegram.entitlements; sourceTree = "<group>"; };
+		EDF9B14520D2A52C00BA1B56 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F70D44A85FA1ED5C51408685 /* Pods-HealthKitTelegramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthKitTelegramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthKitTelegramUITests/Pods-HealthKitTelegramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD40BAEE945094CBBE501402 /* Pods_HealthKitTelegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthKitTelegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF9B10F20D2A4FE00BA1B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B14620D2A52C00BA1B56 /* HealthKit.framework in Frameworks */,
+				E4C37B9954B8118067D203C9 /* Pods_HealthKitTelegram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B12320D2A50100BA1B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7C5846B3375D061ECE5593 /* Pods_HealthKitTelegramTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B12E20D2A50100BA1B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ACCCD9EDF013380DB01A116 /* Pods_HealthKitTelegramUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E93AB19629E21D880B13F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A416F24C823039D8D9BC1DB3 /* Pods-HealthKitTelegram.debug.xcconfig */,
+				38B92824545450FF6D47C09A /* Pods-HealthKitTelegram.release.xcconfig */,
+				D2251F2971E2994EB2E1B322 /* Pods-HealthKitTelegramTests.debug.xcconfig */,
+				78688F7E3C235DD45AF6D3A0 /* Pods-HealthKitTelegramTests.release.xcconfig */,
+				F70D44A85FA1ED5C51408685 /* Pods-HealthKitTelegramUITests.debug.xcconfig */,
+				225C3EC83D366C15CC306A71 /* Pods-HealthKitTelegramUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDF9B10920D2A4FE00BA1B56 = {
+			isa = PBXGroup;
+			children = (
+				EDF9B11420D2A4FE00BA1B56 /* HealthKitTelegram */,
+				EDF9B12920D2A50100BA1B56 /* HealthKitTelegramTests */,
+				EDF9B13420D2A50100BA1B56 /* HealthKitTelegramUITests */,
+				EDF9B11320D2A4FE00BA1B56 /* Products */,
+				EDF9B14420D2A52C00BA1B56 /* Frameworks */,
+				13E93AB19629E21D880B13F7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF9B11320D2A4FE00BA1B56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B11220D2A4FE00BA1B56 /* HealthKitTelegram.app */,
+				EDF9B12620D2A50100BA1B56 /* HealthKitTelegramTests.xctest */,
+				EDF9B13120D2A50100BA1B56 /* HealthKitTelegramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF9B11420D2A4FE00BA1B56 /* HealthKitTelegram */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B14320D2A52C00BA1B56 /* HealthKitTelegram.entitlements */,
+				EDF9B11520D2A4FE00BA1B56 /* AppDelegate.swift */,
+				EDF9B11720D2A4FE00BA1B56 /* ViewController.swift */,
+				EDF9B11920D2A4FE00BA1B56 /* Main.storyboard */,
+				EDF9B11C20D2A50000BA1B56 /* Assets.xcassets */,
+				EDF9B11E20D2A50000BA1B56 /* LaunchScreen.storyboard */,
+				EDF9B12120D2A50000BA1B56 /* Info.plist */,
+				ED4C27A320D2D77300A0FF40 /* HealthKitManager+Background.swift */,
+			);
+			path = HealthKitTelegram;
+			sourceTree = "<group>";
+		};
+		EDF9B12920D2A50100BA1B56 /* HealthKitTelegramTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B12A20D2A50100BA1B56 /* HealthKitTelegramTests.swift */,
+				EDF9B12C20D2A50100BA1B56 /* Info.plist */,
+			);
+			path = HealthKitTelegramTests;
+			sourceTree = "<group>";
+		};
+		EDF9B13420D2A50100BA1B56 /* HealthKitTelegramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B13520D2A50100BA1B56 /* HealthKitTelegramUITests.swift */,
+				EDF9B13720D2A50100BA1B56 /* Info.plist */,
+			);
+			path = HealthKitTelegramUITests;
+			sourceTree = "<group>";
+		};
+		EDF9B14420D2A52C00BA1B56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDF9B14520D2A52C00BA1B56 /* HealthKit.framework */,
+				B8507D679EC28C0583E71B7E /* Pods_HealthKitTelegram.framework */,
+				2875AB24151725CCF1D0496B /* Pods_HealthKitTelegramTests.framework */,
+				FD40BAEE945094CBBE501402 /* Pods_HealthKitTelegramUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF9B11120D2A4FE00BA1B56 /* HealthKitTelegram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9B13A20D2A50100BA1B56 /* Build configuration list for PBXNativeTarget "HealthKitTelegram" */;
+			buildPhases = (
+				84E7052B076C55E5D810F1AC /* [CP] Check Pods Manifest.lock */,
+				EDF9B10E20D2A4FE00BA1B56 /* Sources */,
+				EDF9B10F20D2A4FE00BA1B56 /* Frameworks */,
+				EDF9B11020D2A4FE00BA1B56 /* Resources */,
+				5D0E934D791F83B79472ADE1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthKitTelegram;
+			productName = HealthKitTelegram;
+			productReference = EDF9B11220D2A4FE00BA1B56 /* HealthKitTelegram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF9B12520D2A50100BA1B56 /* HealthKitTelegramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9B13D20D2A50100BA1B56 /* Build configuration list for PBXNativeTarget "HealthKitTelegramTests" */;
+			buildPhases = (
+				E45FE2F8E78F8059DD061ED9 /* [CP] Check Pods Manifest.lock */,
+				EDF9B12220D2A50100BA1B56 /* Sources */,
+				EDF9B12320D2A50100BA1B56 /* Frameworks */,
+				EDF9B12420D2A50100BA1B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF9B12820D2A50100BA1B56 /* PBXTargetDependency */,
+			);
+			name = HealthKitTelegramTests;
+			productName = HealthKitTelegramTests;
+			productReference = EDF9B12620D2A50100BA1B56 /* HealthKitTelegramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDF9B13020D2A50100BA1B56 /* HealthKitTelegramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF9B14020D2A50100BA1B56 /* Build configuration list for PBXNativeTarget "HealthKitTelegramUITests" */;
+			buildPhases = (
+				87F831B39EAFF6893EBB0EF8 /* [CP] Check Pods Manifest.lock */,
+				EDF9B12D20D2A50100BA1B56 /* Sources */,
+				EDF9B12E20D2A50100BA1B56 /* Frameworks */,
+				EDF9B12F20D2A50100BA1B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF9B13320D2A50100BA1B56 /* PBXTargetDependency */,
+			);
+			name = HealthKitTelegramUITests;
+			productName = HealthKitTelegramUITests;
+			productReference = EDF9B13120D2A50100BA1B56 /* HealthKitTelegramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF9B10A20D2A4FE00BA1B56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Nikolay Derkach";
+				TargetAttributes = {
+					EDF9B11120D2A4FE00BA1B56 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					EDF9B12520D2A50100BA1B56 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EDF9B11120D2A4FE00BA1B56;
+					};
+					EDF9B13020D2A50100BA1B56 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = EDF9B11120D2A4FE00BA1B56;
+					};
+				};
+			};
+			buildConfigurationList = EDF9B10D20D2A4FE00BA1B56 /* Build configuration list for PBXProject "HealthKitTelegram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF9B10920D2A4FE00BA1B56;
+			productRefGroup = EDF9B11320D2A4FE00BA1B56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF9B11120D2A4FE00BA1B56 /* HealthKitTelegram */,
+				EDF9B12520D2A50100BA1B56 /* HealthKitTelegramTests */,
+				EDF9B13020D2A50100BA1B56 /* HealthKitTelegramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF9B11020D2A4FE00BA1B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B12020D2A50000BA1B56 /* LaunchScreen.storyboard in Resources */,
+				EDF9B11D20D2A50000BA1B56 /* Assets.xcassets in Resources */,
+				EDF9B11B20D2A4FE00BA1B56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B12420D2A50100BA1B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B12F20D2A50100BA1B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D0E934D791F83B79472ADE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HealthKitTelegram/Pods-HealthKitTelegram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthKitTelegram/Pods-HealthKitTelegram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E7052B076C55E5D810F1AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthKitTelegram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F831B39EAFF6893EBB0EF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthKitTelegramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E45FE2F8E78F8059DD061ED9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthKitTelegramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF9B10E20D2A4FE00BA1B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B11820D2A4FE00BA1B56 /* ViewController.swift in Sources */,
+				EDF9B11620D2A4FE00BA1B56 /* AppDelegate.swift in Sources */,
+				ED4C27A420D2D77300A0FF40 /* HealthKitManager+Background.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B12220D2A50100BA1B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B12B20D2A50100BA1B56 /* HealthKitTelegramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF9B12D20D2A50100BA1B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF9B13620D2A50100BA1B56 /* HealthKitTelegramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF9B12820D2A50100BA1B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF9B11120D2A4FE00BA1B56 /* HealthKitTelegram */;
+			targetProxy = EDF9B12720D2A50100BA1B56 /* PBXContainerItemProxy */;
+		};
+		EDF9B13320D2A50100BA1B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF9B11120D2A4FE00BA1B56 /* HealthKitTelegram */;
+			targetProxy = EDF9B13220D2A50100BA1B56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF9B11920D2A4FE00BA1B56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF9B11A20D2A4FE00BA1B56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDF9B11E20D2A50000BA1B56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF9B11F20D2A50000BA1B56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF9B13820D2A50100BA1B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDF9B13920D2A50100BA1B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF9B13B20D2A50100BA1B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A416F24C823039D8D9BC1DB3 /* Pods-HealthKitTelegram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthKitTelegram/HealthKitTelegram.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GHXTK3SK7;
+				INFOPLIST_FILE = HealthKitTelegram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.derka.HealthKitTelegram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF9B13C20D2A50100BA1B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B92824545450FF6D47C09A /* Pods-HealthKitTelegram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthKitTelegram/HealthKitTelegram.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GHXTK3SK7;
+				INFOPLIST_FILE = HealthKitTelegram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.derka.HealthKitTelegram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDF9B13E20D2A50100BA1B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2251F2971E2994EB2E1B322 /* Pods-HealthKitTelegramTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GHXTK3SK7;
+				INFOPLIST_FILE = HealthKitTelegramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.derka.HealthKitTelegramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthKitTelegram.app/HealthKitTelegram";
+			};
+			name = Debug;
+		};
+		EDF9B13F20D2A50100BA1B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78688F7E3C235DD45AF6D3A0 /* Pods-HealthKitTelegramTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GHXTK3SK7;
+				INFOPLIST_FILE = HealthKitTelegramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.derka.HealthKitTelegramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthKitTelegram.app/HealthKitTelegram";
+			};
+			name = Release;
+		};
+		EDF9B14120D2A50100BA1B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70D44A85FA1ED5C51408685 /* Pods-HealthKitTelegramUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GHXTK3SK7;
+				INFOPLIST_FILE = HealthKitTelegramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.derka.HealthKitTelegramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthKitTelegram;
+			};
+			name = Debug;
+		};
+		EDF9B14220D2A50100BA1B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225C3EC83D366C15CC306A71 /* Pods-HealthKitTelegramUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GHXTK3SK7;
+				INFOPLIST_FILE = HealthKitTelegramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.derka.HealthKitTelegramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthKitTelegram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF9B10D20D2A4FE00BA1B56 /* Build configuration list for PBXProject "HealthKitTelegram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B13820D2A50100BA1B56 /* Debug */,
+				EDF9B13920D2A50100BA1B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF9B13A20D2A50100BA1B56 /* Build configuration list for PBXNativeTarget "HealthKitTelegram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B13B20D2A50100BA1B56 /* Debug */,
+				EDF9B13C20D2A50100BA1B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF9B13D20D2A50100BA1B56 /* Build configuration list for PBXNativeTarget "HealthKitTelegramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B13E20D2A50100BA1B56 /* Debug */,
+				EDF9B13F20D2A50100BA1B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF9B14020D2A50100BA1B56 /* Build configuration list for PBXNativeTarget "HealthKitTelegramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF9B14120D2A50100BA1B56 /* Debug */,
+				EDF9B14220D2A50100BA1B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF9B10A20D2A4FE00BA1B56 /* Project object */;
+}
